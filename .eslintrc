@@ -1,0 +1,7 @@
+{
+  "extends": ["next", "prettier"],
+  "rules": {
+    "jsx-a11y/alt-text": "off",
+    "@next/next/no-img-element": "off"
+  }
+}
