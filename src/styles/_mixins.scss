@@ -1,0 +1,23 @@
+@use 'sass:math';
+
+@mixin breakpoint($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin grid($mediumColumns: 1, $largeColumns: 2, $gridGap: rem(17)) {
+  display: grid;
+  gap: $gridGap;
+  width: 100%;
+  @include breakpoint($medium) {
+    grid-template-columns: repeat($mediumColumns, 1fr);
+  }
+  @include breakpoint($large) {
+    grid-template-columns: repeat($largeColumns, 1fr);
+  }
+}
+
+@function rem($pixels) {
+  @return #{math.div($pixels, 16)}rem;
+}
