@@ -1,7 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
+import { useGlobal } from '@stores/global-store';
 
 const Header = () => {
+  const setMenuOpen = useGlobal((state) => state.setMenuOpen);
+
   return (
     <div className="p-4 pb-0 lg:pt-[52px] lg:px-[72px]">
       <div className="pb-[44px] text-center lg:flex lg:justify-between lg:pb-6">
@@ -35,7 +38,10 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="inline-flex items-center cursor-pointer">
+        <div
+          className="inline-flex items-center cursor-pointer"
+          onClick={() => setMenuOpen(true)}
+        >
           <div className="w-[62px] h-[58px] lg:w-[78px] lg:h-[73px]">
             <Image
               src={'/assets/icons/gsb-logo.svg'}
