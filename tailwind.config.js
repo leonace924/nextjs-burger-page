@@ -14,6 +14,9 @@ module.exports = {
       colors: {
         primary: '#f1682b',
         secondary: '#2b5f7b'
+      },
+      fontFamily: {
+        asap: ['"Asap Condensed"', '"Georgia"', '"Times New Roman"', 'serif']
       }
     }
   },
