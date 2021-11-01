@@ -1,8 +1,7 @@
-import React from "react";
-import Head from "next/head";
-import styles from "./Layout.module.scss";
+import React from 'react';
+import Head from 'next/head';
 
-const Layout = ({ children, title = "Great State Burger" }) => {
+const Layout = ({ children, title = 'Great State Burger' }) => {
   return (
     <>
       <Head>
@@ -12,7 +11,7 @@ const Layout = ({ children, title = "Great State Burger" }) => {
       </Head>
       {/* <Header /> */}
 
-      <main className={styles.main}>{children}</main>
+      <main className="font-asap">{children}</main>
 
       {/* <Footer /> */}
     </>
