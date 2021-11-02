@@ -32,6 +32,9 @@ module.exports = {
       },
       fontFamily: {
         asap: ['"Asap Condensed"', '"Georgia"', '"Times New Roman"', 'serif']
+      },
+      gridTemplateRows: {
+        menu: 'auto 1fr auto'
       }
     }
   },
