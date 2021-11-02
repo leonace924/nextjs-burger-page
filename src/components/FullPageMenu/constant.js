@@ -24,3 +24,18 @@ export const menuObj = [
     link: '/'
   }
 ];
+
+export const bottomLinks = [
+  {
+    label: 'privacy policy',
+    link: '/'
+  },
+  {
+    label: '© great state burger',
+    link: '/'
+  },
+  {
+    label: 'site credits',
+    link: '/'
+  }
+];
