@@ -12,10 +12,14 @@ const FullPageMenu = () => {
 
   useEffect(() => {
     const body = document.querySelector('body');
+    if (!body) return;
+
     if (isMenuOpen) {
-      document.body.classList.add('fixed');
+      body.classList.add('fixed');
+      body.classList.add('overflow-hidden');
     } else {
       body.classList.remove('fixed');
+      body.classList.remove('overflow-hidden');
     }
   }, [isMenuOpen]);
 
@@ -24,7 +28,7 @@ const FullPageMenu = () => {
       className={cx(
         'fixed top-0 left-0 w-full opacity-0 h-0 transition-all duration-300 p-[22px] lg:p-[32px]',
         {
-          'min-h-screen visible opacity-100 z-50 overflow-auto bg-white grid':
+          'min-h-screen visible opacity-100 z-50 overflow-y-scroll bg-white grid':
             isMenuOpen,
           invisible: !isMenuOpen
         }
