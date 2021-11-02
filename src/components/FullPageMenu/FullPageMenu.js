@@ -28,7 +28,7 @@ const FullPageMenu = () => {
       className={cx(
         'fixed top-0 left-0 w-full opacity-0 h-0 transition-all duration-300 p-[22px] lg:p-[32px]',
         {
-          'min-h-screen visible opacity-100 z-50 overflow-y-scroll bg-white grid':
+          'h-screen visible opacity-100 z-50 overflow-y-scroll bg-white grid':
             isMenuOpen,
           invisible: !isMenuOpen
         }
