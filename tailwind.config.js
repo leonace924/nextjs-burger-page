@@ -10,6 +10,16 @@ module.exports = {
     backgroundColor: (theme) => ({
       ...theme('colors')
     }),
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '2rem',
+        xl: '3rem',
+        '2xl': '4rem'
+      }
+    },
     extend: {
       colors: {
         primary: '#f1682b',

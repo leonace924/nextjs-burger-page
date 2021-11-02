@@ -8,7 +8,7 @@ const Carousel = () => {
   SwiperCore.use([Navigation]);
 
   return (
-    <div>
+    <div className="container mx-auto">
       <Swiper
         className="px-4"
         spaceBetween={14}
@@ -20,7 +20,8 @@ const Carousel = () => {
             spaceBetween: 32
           },
           1024: {
-            centeredSlides: false
+            centeredSlides: false,
+            spaceBetween: 32
           }
         }}
       >

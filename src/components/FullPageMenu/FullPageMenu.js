@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import cx from 'classnames';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -9,6 +9,15 @@ import { menuObj } from './constant';
 const FullPageMenu = () => {
   const isMenuOpen = useGlobal((state) => state.isMenuOpen);
   const setMenuOpen = useGlobal((state) => state.setMenuOpen);
+
+  useEffect(() => {
+    const body = document.querySelector('body');
+    if (isMenuOpen) {
+      document.body.classList.add('fixed');
+    } else {
+      body.classList.remove('fixed');
+    }
+  }, [isMenuOpen]);
 
   return (
     <div
@@ -22,8 +31,8 @@ const FullPageMenu = () => {
       )}
     >
       <div className="bg-cover bg-secondary bg-menu-pattern-mobile lg:bg-menu-pattern">
-        <div className="flex flex-col items-center w-full h-full">
-          <div className="w-full pt-4 text-center lg:px-16 lg:flex lg:items-center lg:justify-between lg:pt-16">
+        <div className="container flex flex-col items-center w-full h-full">
+          <div className="w-full pt-4 text-center lg:flex lg:items-center lg:justify-between lg:pt-16">
             <div className="justify-center hidden gap-10 lg:flex lg:items-end">
               <IconButton
                 color="white"

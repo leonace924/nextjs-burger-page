@@ -6,7 +6,7 @@ const Header = () => {
   const setMenuOpen = useGlobal((state) => state.setMenuOpen);
 
   return (
-    <div className="p-4 pb-0 lg:pt-[52px] lg:px-[72px]">
+    <div className="pt-4 lg:pt-[52px] container">
       <div className="pb-[44px] text-center lg:flex lg:justify-between lg:pb-6">
         <div className="hidden lg:flex lg:items-end">
           <div className="mr-8">
