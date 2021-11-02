@@ -35,6 +35,9 @@ module.exports = {
       },
       gridTemplateRows: {
         menu: 'auto 1fr auto'
+      },
+      maxHeight: {
+        webkit: '-webkit-fill-available'
       }
     }
   },

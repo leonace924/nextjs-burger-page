@@ -29,7 +29,7 @@ const FullPageMenu = () => {
         className={cx(
           'opacity-0 h-0 overflow-auto transition-all duration-300 p-[22px] lg:p-[32px]',
           {
-            'h-screen visible opacity-100 z-50 bg-white flex flex-col':
+            'h-screen max-h-webkit visible opacity-100 z-50 bg-white flex flex-col':
               isMenuOpen,
             invisible: !isMenuOpen
           }
@@ -109,7 +109,7 @@ const FullPageMenu = () => {
             </ul>
           </div>
 
-          <div className="container relative pt-10 pb-20 text-center md:pb-8 lg:hidden">
+          <div className="container relative pt-10 pb-4 text-center md:pb-8 lg:hidden">
             <div className="inline-grid items-end justify-center grid-cols-2 gap-10">
               <IconButton
                 color="white"
