@@ -26,15 +26,16 @@ const FullPageMenu = () => {
   return (
     <div
       className={cx(
-        'fixed top-0 left-0 w-full opacity-0 h-0 transition-all duration-300 p-[22px] lg:p-[32px]',
+        'fixed top-0 left-0 w-full opacity-0 h-0 transition-all duration-300',
+        //  p-[22px] lg:p-[32px]
         {
-          'h-screen visible opacity-100 z-50 overflow-y-scroll bg-white grid':
+          'h-screen visible opacity-100 z-50 overflow-auto bg-white flex flex-col':
             isMenuOpen,
           invisible: !isMenuOpen
         }
       )}
     >
-      <div className="bg-cover bg-secondary bg-menu-pattern-mobile lg:bg-menu-pattern">
+      <div className="flex-1 bg-cover bg-secondary bg-menu-pattern-mobile lg:bg-menu-pattern">
         <div className="container flex flex-col items-center w-full h-full">
           <div className="w-full pt-4 text-center lg:flex lg:items-center lg:justify-between lg:pt-16">
             <div className="justify-center hidden lg:gap-10 lg:inline-grid lg:items-end lg:grid-cols-2">
