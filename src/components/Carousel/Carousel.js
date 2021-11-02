@@ -54,7 +54,8 @@ const Carousel = () => {
               centeredSlides: false
             },
             1024: {
-              spaceBetween: 32
+              spaceBetween: 32,
+              centeredSlides: false
             }
           }}
         >
