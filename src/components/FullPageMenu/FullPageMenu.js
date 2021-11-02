@@ -36,8 +36,8 @@ const FullPageMenu = () => {
         )}
       >
         <div className="relative grid flex-1 grid-rows-menu before:absolute before:block before:bg-cover before:bg-secondary before:bg-menu-pattern-mobile before:inset-0 lg:before:bg-menu-pattern">
-          {/* <div className="container relative grid flex-1 grid-rows-menu"> */}
-          <div className="w-full pt-4 text-center lg:flex lg:items-center lg:justify-between md:pt-16">
+          {/* <div className="relative grid flex-1 grid-rows-menu"> */}
+          <div className="container w-full pt-4 text-center lg:flex lg:items-center lg:justify-between md:pt-16">
             <div className="relative justify-center hidden lg:gap-10 lg:inline-grid lg:items-end lg:grid-cols-2">
               <IconButton
                 color="white"
@@ -91,7 +91,7 @@ const FullPageMenu = () => {
             </div>
           </div>
 
-          <div className="relative flex items-center justify-center flex-1">
+          <div className="container relative flex items-center justify-center flex-1">
             <ul className="pt-[46px] px-4 lg:py-[72px]">
               {menuObj?.map((el, id) => (
                 <li
@@ -109,7 +109,7 @@ const FullPageMenu = () => {
             </ul>
           </div>
 
-          <div className="relative pt-10 text-center pb-14 md:pb-8 lg:hidden">
+          <div className="container relative pt-10 pb-20 text-center md:pb-8 lg:hidden">
             <div className="inline-grid items-end justify-center grid-cols-2 gap-10">
               <IconButton
                 color="white"
