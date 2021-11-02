@@ -15,13 +15,20 @@ module.exports = {
         primary: '#f1682b',
         secondary: '#2b5f7b'
       },
+      backgroundImage: {
+        'menu-pattern': "url('/assets/images/img-menu-pattern.png')",
+        'menu-pattern-mobile':
+          "url('/assets/images/img-menu-pattern-mobile.png')"
+      },
       fontFamily: {
         asap: ['"Asap Condensed"', '"Georgia"', '"Times New Roman"', 'serif']
       }
     }
   },
   variants: {
-    extend: {}
+    extend: {
+      margin: ['last']
+    }
   },
   plugins: []
 };
