@@ -33,7 +33,7 @@ const FullPageMenu = () => {
       <div className="bg-cover bg-secondary bg-menu-pattern-mobile lg:bg-menu-pattern">
         <div className="container flex flex-col items-center w-full h-full">
           <div className="w-full pt-4 text-center lg:flex lg:items-center lg:justify-between lg:pt-16">
-            <div className="justify-center hidden gap-10 lg:flex lg:items-end">
+            <div className="justify-center hidden lg:gap-10 lg:inline-grid lg:items-end lg:grid-cols-2">
               <IconButton
                 color="white"
                 icon={
@@ -105,7 +105,7 @@ const FullPageMenu = () => {
           </div>
 
           <div className="pt-10 pb-4 lg:hidden">
-            <div className="flex items-end justify-center gap-10">
+            <div className="inline-grid items-end justify-center grid-cols-2 gap-10">
               <IconButton
                 color="white"
                 icon={

@@ -7,10 +7,13 @@ const Footer = () => {
   return (
     <div className="bg-secondary pt-5 pb-[72px] lg:pt-20 lg:pb-14">
       <div className="container">
-        <div className="lg:flex-row-reverse lg:flex lg:items-center lg:gap-16 lg:justify-center">
-          <ul className="lg:flex lg:items-center lg:gap-16">
+        <div className="lg:flex-row-reverse lg:flex lg:items-center lg:justify-center">
+          <ul className="lg:flex lg:items-center">
             {menuObj?.map((el, id) => (
-              <li key={id} className="mb-4 text-center last:mb-0 lg:mb-0">
+              <li
+                key={id}
+                className="mb-4 text-center last:mb-0 lg:mb-0 lg:mr-16 last:mr-0"
+              >
                 <Link href={el.link}>
                   <a className="text-[26px] leading-tight font-semibold text-white uppercase ">
                     {el.label}
@@ -20,7 +23,7 @@ const Footer = () => {
             ))}
           </ul>
 
-          <div className="w-[172px] mt-10 mx-auto lg:m-0">
+          <div className="w-[172px] mt-10 mx-auto lg:m-0 lg:mr-16">
             <Image
               src={'/assets/icons/gsb-wordmark-slogan.svg'}
               alt="gsb-wordmark-slogan"

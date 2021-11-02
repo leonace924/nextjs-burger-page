@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import IconButton from '@components/IconButton/IconButton';
 import { useGlobal } from '@stores/global-store';
 
 const Header = () => {
@@ -10,32 +11,32 @@ const Header = () => {
       <div className="pb-[44px] text-center lg:flex lg:justify-between lg:pb-6">
         <div className="hidden lg:flex lg:items-end">
           <div className="mr-8">
-            <div className="flex justify-center">
-              <Image
-                src={'/assets/icons/icon-flag.svg'}
-                alt="icon-flag"
-                width={36}
-                height={39}
-              />
-            </div>
-            <p className="mt-1 text-sm font-bold uppercase text-secondary">
-              Locations
-            </p>
+            <IconButton
+              color="secondary"
+              icon={
+                <Image
+                  src={'/assets/icons/icon-flag.svg'}
+                  alt="icon-flag"
+                  width={36}
+                  height={39}
+                />
+              }
+              label="Locations"
+            />
           </div>
 
-          <div className="">
-            <div className="flex justify-center">
+          <IconButton
+            color="secondary"
+            icon={
               <Image
                 src={'/assets/icons/icon-car.svg'}
                 alt="icon-car"
                 width={37}
                 height={39}
               />
-            </div>
-            <p className="mt-1 text-sm font-bold uppercase text-secondary">
-              Order Online
-            </p>
-          </div>
+            }
+            label="Order Online"
+          />
         </div>
 
         <div
