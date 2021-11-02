@@ -11,7 +11,7 @@ const Layout = ({ children, title = 'Great State Burger' }) => {
       </Head>
       {/* <Header /> */}
 
-      <main className="font-asap">{children}</main>
+      <main>{children}</main>
 
       {/* <Footer /> */}
     </>
